@@ -38,8 +38,8 @@ class _weatherScreenState extends State<weatherScreen> {
                   Container(
                     width: double.infinity,
                     height: double.infinity,
-                    child: Image.network(
-                      "https://pixabay.com/photos/cabin-countryside-storm-barn-rural-924958/",
+                    child: Image.asset(
+                      "assets/images/ni.jpg",
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -61,7 +61,7 @@ class _weatherScreenState extends State<weatherScreen> {
                                 style: GoogleFonts.alice(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
-                                  fontSize: 40,
+                                  fontSize: 35,
                                 ),
                               ),
                             ),
@@ -74,7 +74,7 @@ class _weatherScreenState extends State<weatherScreen> {
                                 "${weatherModel.current.tempC} °C",
                                 style: GoogleFonts.alice(
                                   color: Colors.white,
-                                  fontSize: 60,
+                                  fontSize: 50,
                                 ),
                               ),
                             ),
@@ -86,10 +86,10 @@ class _weatherScreenState extends State<weatherScreen> {
                                   decoration: BoxDecoration(),
                                   alignment: Alignment.center,
                                   child: Text(
-                                    "Current Time     :-     ${weatherModel.location.localtime}",
+                                    "Current Time  :- ${weatherModel.location.localtime}",
                                     style: GoogleFonts.alice(
                                       color: Colors.white,
-                                      fontSize: 30,
+                                      fontSize: 20,
                                     ),
                                   ),
                                 ),
@@ -99,10 +99,10 @@ class _weatherScreenState extends State<weatherScreen> {
                                   decoration: BoxDecoration(),
                                   alignment: Alignment.center,
                                   child: Text(
-                                    "Last Update Time      :-     ${weatherModel.current.lastUpdated}",
+                                    "Last Update Time :-${weatherModel.current.lastUpdated}",
                                     style: GoogleFonts.alice(
                                       color: Colors.white,
-                                      fontSize: 30,
+                                      fontSize: 20,
                                     ),
                                   ),
                                 ),
@@ -112,10 +112,10 @@ class _weatherScreenState extends State<weatherScreen> {
                                   decoration: BoxDecoration(),
                                   alignment: Alignment.center,
                                   child: Text(
-                                    "Wind Degree      :-     ${weatherModel.current.windDegree}",
+                                    "Wind Degree :- ${weatherModel.current.windDegree}",
                                     style: GoogleFonts.alice(
                                       color: Colors.white,
-                                      fontSize: 30,
+                                      fontSize: 20,
                                     ),
                                   ),
                                 ),
@@ -155,7 +155,7 @@ class _weatherScreenState extends State<weatherScreen> {
                                     padding: EdgeInsets.all(8.0),
                                     child: Container(
                                       height: 50,
-                                      width: 175,
+                                      width: 150,
                                       decoration: BoxDecoration(
                                         color: Color(0xff312D56),
                                         border: Border.all(
@@ -176,7 +176,7 @@ class _weatherScreenState extends State<weatherScreen> {
                                     padding: EdgeInsets.all(8.0),
                                     child: Container(
                                       height: 50,
-                                      width: 175,
+                                      width: 150,
                                       decoration: BoxDecoration(
                                         color: Color(0xff312D56),
                                         border: Border.all(
@@ -203,7 +203,7 @@ class _weatherScreenState extends State<weatherScreen> {
                                     padding: EdgeInsets.all(8.0),
                                     child: Container(
                                       height: 50,
-                                      width: 175,
+                                      width: 150,
                                       decoration: BoxDecoration(
                                         color: Color(0xff312D56),
                                         border: Border.all(
@@ -224,7 +224,7 @@ class _weatherScreenState extends State<weatherScreen> {
                                     padding: EdgeInsets.all(8.0),
                                     child: Container(
                                       height: 50,
-                                      width: 175,
+                                      width: 150,
                                       decoration: BoxDecoration(
                                         color: Color(0xff312D56),
                                         border: Border.all(
@@ -251,7 +251,7 @@ class _weatherScreenState extends State<weatherScreen> {
                                     padding: EdgeInsets.all(8.0),
                                     child: Container(
                                       height: 50,
-                                      width: 175,
+                                      width: 150,
                                       decoration: BoxDecoration(
                                         color: Color(0xff312D56),
                                         border: Border.all(
@@ -260,7 +260,7 @@ class _weatherScreenState extends State<weatherScreen> {
                                       ),
                                       alignment: Alignment.center,
                                       child: Text(
-                                        "Wind Speed kilometer",
+                                        "Wind Speed ",
                                         style: GoogleFonts.alice(
                                           color: Colors.white,
                                           fontSize: 15,
@@ -272,7 +272,7 @@ class _weatherScreenState extends State<weatherScreen> {
                                     padding: EdgeInsets.all(8.0),
                                     child: Container(
                                       height: 50,
-                                      width: 175,
+                                      width: 150,
                                       decoration: BoxDecoration(
                                         color: Color(0xff312D56),
                                         border: Border.all(
@@ -294,8 +294,8 @@ class _weatherScreenState extends State<weatherScreen> {
                               Expanded(
                                 child: Stack(
                                   children: [
-                                    Image.asset(
-                                      "Assets/Images/img_2.png",
+                                    Image.network(
+                                      "https://images.pexels.com/photos/165754/pexels-photo-165754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
                                       height: 100,
                                     ),
                                     Positioned(

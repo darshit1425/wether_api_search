@@ -28,7 +28,7 @@ class _AddDataState extends State<AddData> {
               width: double.infinity,
               height: double.infinity,
               child: Image.asset(
-                "Assets/Images/img.png",
+                "assets/images/images11.jpg",
                 fit: BoxFit.cover,
               ),
             ),
